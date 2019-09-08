@@ -1,0 +1,24 @@
+.pendant {
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    .float-box {
+        height: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        background-color: #848484;
+        opacity: .6;
+        box-shadow: 0 0 10px rgba(0,0,0,.05);
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #00a2ff;
+            opacity: 1;
+        }
+    }
+}

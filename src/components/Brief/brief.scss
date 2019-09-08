@@ -1,0 +1,58 @@
+.brief {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 15px 18px;
+    background-color: #fff;
+    margin: 0 0 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    border-radius: 0;
+}
+.thumbnail-img {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    margin-right: 4rem;
+}
+.post-info-wrapper {
+    margin-top: unset;
+    
+    .brief-title {
+        font-size: 25px;
+        margin: 0 0 15px;
+    
+        & > a {
+            color: #1c1c1c;
+            -webkit-transition: color .3s;
+            transition: color .3s;
+        }
+    
+        &:hover > a {
+            color: #0097ee;
+        }
+    }
+}
+.margin-bottom-half {
+    color: #333;
+    margin-bottom: 1rem;
+}
+.text-description {
+    color: #757575;
+}
+
+
+/* loadMore */
+.load {
+    text-align: center;
+    .load-more {
+        line-height: 45px;
+        height: 45px;
+        width: 120px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #0097ee;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+    }
+}

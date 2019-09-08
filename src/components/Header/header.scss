@@ -1,0 +1,24 @@
+.nav {
+    background-color: #FFF;
+    height: 64px;
+    line-height: 64px;
+    box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+}
+.navbar {
+    max-width: 1080px;
+    height: 64px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.navbar-left {
+    float: left;
+    height: 64px;
+    line-height: 64px;
+}
+.navbar-right {
+    float: right;
+}
+.site-title {
+    font-size: 28px;
+    font-weight: normal;
+}
