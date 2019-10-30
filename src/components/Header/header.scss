@@ -5,7 +5,7 @@
     box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0,0,0,.1);
 }
 .navbar {
-    max-width: 1080px;
+    max-width: 1340px;
     height: 64px;
     margin: 0 auto;
     padding: 0 30px;
@@ -19,6 +19,21 @@
     float: right;
 }
 .site-title {
-    font-size: 28px;
-    font-weight: normal;
+    font-size: 28px !important;
+    font-weight: normal !important;
+    line-height: inherit !important;
+}
+.list-button {
+    display: none !important;
+}
+.nav-lists {
+    display: inline-block;
+}
+@media screen and (max-width: 960px) {
+    .nav-lists {
+        display: none;
+    }
+    .list-button {
+        display: inline-flex !important;
+    }
 }

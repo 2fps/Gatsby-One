@@ -1,19 +1,26 @@
 import React from 'react';
-import { Link } from "gatsby";
 
 import NavBrand from './navBrand';
 import NavLinks from './navLinks';
+import config from '../../../config/config';
+
 import './header.scss';
 
-const Header = function({ title }) {
+const Header = function() {
+    let {
+        siteTitle,
+        siteUrl,
+        menus
+    } = config;
+
     return (
         <nav className="nav">
             <div className="navbar">
                 <div className="navbar-left">
-                    <NavBrand title={ title } brand="" />
+                    <NavBrand siteTitle={ siteTitle } siteUrl={ siteUrl } brand="" />
                 </div>
                 <div className="navbar-right">
-                    <NavLinks />
+                    <NavLinks menus={ menus } />
                 </div>
             </div>
         </nav>

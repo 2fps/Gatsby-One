@@ -9,7 +9,10 @@ body {
     background-color: #f5f5f5;
     font-weight: 300;
     font-size: 16px;
-    font-family: 'sans-serif';
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+a {
+    cursor: pointer;
 }
 a:link, a:visited, 
 a:hover, a:active {
@@ -20,30 +23,163 @@ a:hover, a:active {
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     font-weight: 400;
-    margin: 0 0 2rem;
+    margin: 1rem 0;
 }
-
-.margin-right-1 {
-    margin-right: 1rem;
-}
-.content-container {
-    max-width: 1080px;
+div.content-container {
+    max-width: 1280px;
     margin: 0 auto;
     min-height: 600px;
     padding-top: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .article-content {
-    margin: 0 30px;
+    margin: 0 25px;
+    padding: 0 10px 20px 20px;
 }
-.blog-post {
-    margin-bottom: 50px;
+.article-module {
+    margin-bottom: 30px;
     background-color: #fff;
-    padding: 30px 15px 18px;
+    padding: 20px 18px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.MuiGrid-grid-md-3.MuiGrid-grid-xs-auto {
+    max-width: 0;
+}
+
+.opacity-0 {
+    opacity: 0 !important;
+}
+.opacity-6 {
+    opacity: 0.6 !important;
+}
+.margin-right-1 {
+    margin-right: 1rem;
+}
+.margin-right-20px {
+    margin-right: 20px !important;
+}
+
+.padding-left-40px {
+    padding-left: 40px !important;
+}
+a.link {
+    -webkit-transition: color .3s;
+    transition: color .3s;
+
+    &:hover {
+        color: #0097ee !important;
+    }
+}
+
+.color-757575 {
+    color: #757575 !important;
+}
+
+// post 页面
+.blog-post {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 30px 25px 18px;
     box-shadow: 0 1px 2px rgba(0,0,0,.1);
 
     & > h1 {
         text-align: center;
         border-bottom: none;
+        margin-bottom: 20px;
     }
+}
+.blog-info {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.info-content {
+    display: inline-block;
+}
+.info-icons {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.info-words {
+    color: rgba(0, 0, 0, 0.87);
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin: 0 20px 0 5px;
+}
+.blog-tags {
+    margin-top: 30px;
+
+    & > .blog-chip {
+        vertical-align: super !important;
+        height: 26px !important;
+        margin-left: 10px;
+    }
+    a > .MuiChip-label {
+        cursor: pointer;
+    }
+}
+
+
+// links 友链页面
+.links-root {
+    flex-grow: 1;
+}
+.links-paper {
+    padding: 16px;
+    text-align: center;
+    color: #0097ee;
+}
+.links-chanage {
+    padding: 16px;
+}
+
+
+// tags 页面
+.tags-item {
+    margin: 0 10px 10px 0 !important;
+}
+.back-all-tags {
+    margin-top: 30px;
+    & svg {
+        vertical-align: bottom;
+    }
+}
+
+// about-me 页面
+
+// 改掉时间轴颜色
+.vertical-timeline::before {
+    background-color: #F5F5F5 !important;
+}
+.about-me-info {
+    padding-left: 80px;
+}
+
+// archives 归档
+.article-item {
+    -webkit-transition: color .3s;
+    transition: color .3s;
+
+    &:hover {
+        color: #0097ee !important;
+    }
+}
+
+.side-box {
+    padding: 24px 16px;
+
+    & > .side-box-title {
+        margin-bottom: 10px;
+    }
+}
+
+::selection {
+    background: #262a30;
+    color: #fff;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

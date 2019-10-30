@@ -1,0 +1,48 @@
+.article-menu {
+    // position: fixed;
+    // opacity: 0;
+    // display: none;
+    right: 100px;
+    bottom: 165px;
+    text-align: left;
+    padding: 15px 15px 15px 0px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    transform-origin: right bottom;
+
+    a {
+        border-left: 3px solid transparent;
+        // padding-left: 10px;
+        white-space: nowrap;
+    }
+
+    li {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+  
+    & > ul > li a {
+        color: #6c757d;
+
+        &:hover {
+            color: #00a2ff;
+            // color: #00a2ff;
+            // font-weight: bold;
+        }
+    }
+    & > ul {
+        list-style: none;
+
+        & > li > ul {
+            padding-left: 25px;
+            list-style: none;
+
+            & > li > ul {
+                padding-left: 20px;
+                list-style: none;
+            }
+        }
+    }
+}

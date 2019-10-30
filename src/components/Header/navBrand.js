@@ -1,13 +1,17 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
-const NavBrand = ({ brand, title, siteUrl }) => (
-    <div className="brand">
-        <Link to='/about'>
-            {/* <img className="image margin-right-half border-radius" src={brand} alt="Brand Image" /> */}
-            <span className="site-title"><strong>{title}</strong></span>
-        </Link>
-    </div>
-)
+const NavBrand = ({ siteTitle, siteUrl }) => {
+
+    return (
+        <div className="brand">
+            <Typography className="site-title">
+                <a href={ siteUrl }>
+                    { siteTitle }
+                </a>
+            </Typography>
+        </div>
+    );
+}
 
 export default NavBrand;

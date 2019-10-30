@@ -5,9 +5,9 @@
 function getPostData (post) {
     return post.map((data) => {
         return {
-            categories: data.node.childMarkdownRemark.frontmatter.categories,
-            tags: data.node.childMarkdownRemark.frontmatter.tags,
-            date: data.node.childMarkdownRemark.frontmatter.date,
+            categories: data.node.frontmatter.categories,
+            tags: data.node.frontmatter.tags,
+            date: data.node.frontmatter.date,
         }
     });
 }
