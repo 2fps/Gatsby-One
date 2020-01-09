@@ -1,8 +1,12 @@
 .pendant {
     width: 50px;
     position: fixed;
-    right: 30px;
-    bottom: 30px;
+    right: 40px;
+    bottom: 40px;
+
+    & > svg {
+        opacity: 0.6;
+    }
 
     .float-box {
         height: 50px;
@@ -21,4 +25,30 @@
             opacity: 1;
         }
     }
+
+    & > .pendant-box {
+        opacity: .6;
+        box-sizing: border-box;
+        background-color: #848484;
+        box-shadow: 0 0 10px rgba(0,0,0,.05);
+        opacity: .6;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+
+
+        &:hover {
+            background-color: #00a2ff;
+            opacity: 1;
+        }
+    }
+}
+.weichat-pic {
+    position: absolute;
+    bottom: 65px;
+    left: -170px;
+    opacity: 1;
 }

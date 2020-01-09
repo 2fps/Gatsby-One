@@ -24,11 +24,15 @@
             color: #1c1c1c;
             -webkit-transition: color .3s;
             transition: color .3s;
+
+            &:hover {
+                color: #0097ee;
+            }
         }
     
-        &:hover > a {
-            color: #0097ee;
-        }
+        // &:hover > a {
+        //     color: #0097ee;
+        // }
     }
 }
 .margin-bottom-half {

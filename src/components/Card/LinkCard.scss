@@ -1,0 +1,23 @@
+.links-card {
+  display: flex;
+  max-height: 101px;
+}
+.links-details {
+  display: flex;
+  flex-direction: column;
+}
+.links-content {
+  padding: 8px 10px 10px !important;
+}
+.links-cover {
+  width: 101px;
+  flex-shrink: 0;
+}
+.links-introduction {
+  font-size: 14px !important;
+}
+.links-title {
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 4px !important;
+}
